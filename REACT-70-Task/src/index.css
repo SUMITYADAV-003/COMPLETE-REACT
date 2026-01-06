@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+.image1{
+  background-image: url("sumit.png");
+  background-position:center ;
+  background-size: cover;
+}
+.DarkImag{
+  background-image: url("yadav1.png");
+  background-position:center ;
+  background-size: cover;
+}
