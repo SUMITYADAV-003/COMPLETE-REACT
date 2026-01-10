@@ -4,12 +4,12 @@ const Iamge = () => {
   return (
     <div className="flex justify-between m-10 gap-3 ">
       <div className="">
-        <h3 className="leading-[20px]">
+        <h3 className="leading-[20px] text-2xl">
           I'm Web Desiger <br />
           <span className="text-2xl text-[#02F273] font-bold leading-[25px]">Sumit Yadav</span>
         </h3>
-        <p>Lorem ipsum dolor sit amet cmsectetur adipisicing elit. Distinctio. repellat.</p>
-        <button className="px-4 bg-[#02F273] mt-3.5">Learn More</button>
+        <p className="text-2xl">Lorem ipsum dolor sit amet cmsectetur adipisicing elit. Distinctio. repellat.</p>
+        <button className="px-4 bg-[#02F273] mt-3.5 text-2xl">Learn More</button>
       </div>
        
       <div className="">

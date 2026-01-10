@@ -16,7 +16,7 @@ const Card = (props) => {
       <p className="text-sm text-emerald-900 text-center font-bold"> TITLE - {props.users.title}</p>
       <h3 className="font-bold uppercase text-center">viewsCount - {props.users.viewsCount}</h3>
       
-      <button className="text-center p-4 bg-blue-500 rounded-3xl ml-20- font-bold text-sm leading-1 hover:bg-black hover:text-white overflow-hidden mt-3">followed </button>
+      <button className="text-center p-4 bg-blue-500 rounded-3xl ml-21 font-bold text-sm leading-1 hover:bg-black hover:text-white overflow-hidden mt-3">followed </button>
       </div>
       
      
