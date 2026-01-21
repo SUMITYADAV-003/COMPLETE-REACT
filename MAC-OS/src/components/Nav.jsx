@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Nav.scss"
-
+import DateTime from './DateTime'
 const Nav = () => {
   return (
    <nav>
@@ -23,7 +23,14 @@ const Nav = () => {
         <p>Terminal</p>
       </div>
     </div>
-    <div className="right"></div>
+    <div className="right">
+      <div className='nav-icon'>
+        <img src="/navbar-icons/wifi.svg" alt="" />
+      </div>
+      <div className='nav-icon'>
+        <DateTime />
+      </div>
+    </div>
    </nav>
   )
 }

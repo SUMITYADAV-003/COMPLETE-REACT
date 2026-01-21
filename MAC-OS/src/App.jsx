@@ -2,12 +2,16 @@ import React from 'react'
 import './app.scss';
 import Dock from './components/Dock';
 import Nav from './components/Nav';
+import MacWindow from './components/Windows/MacWindow';
 
 const App = () => {
   return (
     <main>
       <Dock/>
       <Nav/>
+      <MacWindow>
+        <h3>hello</h3>
+      </MacWindow>
      
 
     
