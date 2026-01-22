@@ -2,18 +2,21 @@ import React from 'react'
 import './app.scss';
 import Dock from './components/Dock';
 import Nav from './components/Nav';
-import MacWindow from './components/Windows/MacWindow';
-
+import Github from './components/Windows/Github';
+import Note from './components/Windows/Note';
+import Resume from './components/Windows/Resume';
+import Spotify from './components/Windows/Spotify';
 const App = () => {
   return (
     <main>
       <Dock/>
       <Nav/>
-      <MacWindow>
-        <h3>hello</h3>
-      </MacWindow>
-     
-
+      <Github />
+      <Note />
+      <Resume />
+      <Spotify />
+      
+      
     
     </main>
   )

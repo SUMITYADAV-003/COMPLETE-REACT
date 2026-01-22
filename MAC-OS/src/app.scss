@@ -12,8 +12,10 @@ body,
 main {
   height: 100%;
   width: 100%;
+  position: relative;
 
   background-image: url(/doc-icons/img1.png);
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }

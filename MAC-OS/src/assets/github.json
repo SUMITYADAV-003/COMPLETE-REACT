@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.pinimg.com/736x/d4/9e/c5/d49ec5ce9ca9e6007bab4272c1fbd934.jpg",
+    "title": "CryptoTracker Pro",
+    "description": "Real-time cryptocurrency monitoring dashboard with advanced technical analysis tools.",
+    "tags": ["React", "WebSockets", "Chart.js"],
+    "repoLink": "https://github.com/user/crypto-pro",
+    "demoLink": null
+  },
+  {
+    "id": 2,
+    "image": "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "title": "AI Image Lab",
+    "description": "A sophisticated interface for generating and editing images using machine learning models.",
+    "tags": ["Python", "TensorFlow", "FastAPI"],
+    "repoLink": "https://github.com/user/ai-lab",
+    "demoLink": "https://ailab.dev"
+  },
+  {
+    "id": 3,
+    "image": "https://images.pexels.com/photos/4064826/pexels-photo-4064826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "title": "EcoCommerce Hub",
+    "description": "Sustainable e-commerce platform featuring dynamic inventory and secure checkout.",
+    "tags": ["Next.js", "Stripe", "MongoDB"],
+    "repoLink": "https://github.com/user/eco-hub",
+    "demoLink": "https://ecohub.shop"
+  },
+  {
+    "id": 4,
+    "image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "title": "TaskFlow Kanban",
+    "description": "Collaborative project management tool with drag-and-drop functionality and team chat.",
+    "tags": ["TypeScript", "Firebase", "Redux"],
+    "repoLink": "https://github.com/user/taskflow",
+    "demoLink": "https://taskflow.io"
+  },
+  {
+    "id": 5,
+    "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "title": "Recipe Finder API",
+    "description": "Discover global cuisines with a comprehensive search engine powered by a custom nutritional API.",
+    "tags": ["React Native", "Node.js", "Express"],
+    "repoLink": "https://github.com/user/recipe-finder",
+    "demoLink": "https://recipefinder.app"
+  },
+  {
+    "id": 6,
+    "image": "https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "title": "Fitness Tracker App",
+    "description": "Monitor your health metrics, set workout goals, and visualize progress over time.",
+    "tags": ["Vue.js", "PostgreSQL", "D3.js"],
+    "repoLink": "https://github.com/user/fittrack",
+    "demoLink": "https://fittrack-demo.com"
+  },
+  {
+    "id": 7,
+    "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "title": "Code Collaboration Suite",
+    "description": "A real-time shared code editor with built-in video conferencing for remote pair programming.",
+    "tags": ["WebRTC", "Socket.io", "React"],
+    "repoLink": "https://github.com/user/code-collab",
+    "demoLink": "https://codecollab.live"
+  },
+  {
+    "id": 8,
+    "image": "https://images.pexels.com/photos/2101187/pexels-photo-2101187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "title": "SkyCast Weather",
+    "description": "Hyper-local weather forecasting with interactive 3D maps and severe alert notifications.",
+    "tags": ["JavaScript", "OpenWeather API", "Leaflet"],
+    "repoLink": "https://github.com/user/skycast",
+    "demoLink": "https://skycast-weather.net"
+  },
+  {
+    "id": 9,
+    "image": "https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "title": "Smart Home Hub",
+    "description": "Control IoT devices throughout your home from a centralized, secure web interface.",
+    "tags": ["MQTT", "Angular", "Express"],
+    "repoLink": "https://github.com/user/smarthome",
+    "demoLink": "https://smarthome-hub.io"
+  },
+  {
+    "id": 10,
+    "image": "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "title": "Portfolio Architect",
+    "description": "A drag-and-drop website builder designed specifically for creative professionals.",
+    "tags": ["Gatsby", "GraphQL", "Framer Motion"],
+    "repoLink": "https://github.com/user/portfolio-arch",
+    "demoLink": "https://portfolio-arch.com"
+  }
+]
