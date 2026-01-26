@@ -1,41 +1,135 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-const SearchBar = () => {
-  const [searchValue, setSearchValue] = useState("");
-   const handleSearch = () => {
-    console.log("Searching for:", searchValue);
-    alert(`Searching for: ${searchValue}`);
-  };
+// const SearchBar = () => {
+//   const [searchValue, setSearchValue] = useState("");
+//    const handleSearch = () => {
+//     console.log("Searching for:", searchValue);
+//     alert(`Searching for: ${searchValue}`);
+//   };
 
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
-      handleSearch();
-    }
-  };
+//   const handleKeyPress = (e) => {
+//     if (e.key === 'Enter') {
+//       handleSearch();
+//     }
+//   };
   
-  return (
-    <div className="flex  justify-between">
-      <h3>Our range &nbsp; |</h3>
-      <p>Sewage Treatment Plant</p>
-      <p>Effluent Treatment Plant</p>
-      <p>
-        Organic Waste <br />
-        Composter
-      </p>
-      <p>Water Treatment Plant</p>
-       <div className="relative">
-            <i className="ri-search-line absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl"></i>
-            <input 
-              type="text"
-              placeholder="Search products, services..."
-              value={searchValue}
-              onChange={(e) => setSearchValue(e.target.value)}
-              onKeyPress={handleKeyPress}
-              className="w-full pl-12 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
-            />
-          </div>
-    </div>
-  );
-};
+//   return (
+//     <div className="flex  justify-between">
+//       <h3>Our range &nbsp; |</h3>
+//       <p>Sewage Treatment Plant</p>
+//       <p>Effluent Treatment Plant</p>
+//       <p>
+//         Organic Waste <br />
+//         Composter
+//       </p>
+//       <p>Water Treatment Plant</p>
+//        <div className="relative">
+//             <i className="ri-search-line absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl"></i>
+//             <input 
+//               type="text"
+//               placeholder="Search products, services..."
+//               value={searchValue}
+//               onChange={(e) => setSearchValue(e.target.value)}
+//               onKeyPress={handleKeyPress}
+//               className="w-full pl-12 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"
+//             />
+//           </div>
+//     </div>
+//   );
+// };
 
-export default SearchBar;
+// export default SearchBar;
+
+
+
+
+
+
+
+// NAR - BAR
+
+
+// import React, { useState } from "react";
+
+// const Navbar = () => {
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+//   return (
+//     <div className="bg-white w-full p-3 md:p-6">
+//       {/* Main Container */}
+//       <div className="flex flex-col lg:flex-row lg:items-start gap-4">
+        
+//         {/* Logo and Company Info */}
+//         <div className="flex gap-3">
+//           <img 
+//             className=" h-40 w-30   object-cover abject-center rounded-2xl flex-shrink-0" 
+//             src="img1.png" 
+//             alt="Company Logo" 
+//           />
+//           <div className="flex flex-col justify-center gap-1 md:gap-2">
+//             
+//           </div>
+//         </div>
+
+//         {/* Desktop Navigation */}
+//         <div className="hidden xl:flex gap-5 items-center ml-auto p-15">
+//           <a className="text-lg  uppercase py-3 px-6 rounded-2xl hover:bg-blue-600 hover:text-white active:scale-95 cursor-pointer transition-all" href="#">
+//             Home
+//           </a>
+//           <a className="text-lg  uppercase py-3 px-6 rounded-2xl hover:bg-blue-600 hover:text-white active:scale-95 cursor-pointer transition-all" href="#">
+//             About Us
+//           </a>
+//           <a className="text-lg  uppercase py-3 px-6 rounded-2xl hover:bg-blue-600 hover:text-white active:scale-95 cursor-pointer transition-all" href="#">
+//             Contact Us
+//           </a>
+//         </div>
+
+//         {/* Contact Buttons - Desktop */}
+//         <div className="hidden md:flex flex-col gap-3 ml-auto xl:ml-4">
+//           <button className="px-6 py-2 border-2 rounded text-base lg:text-lg border-blue-600 text-blue-600 font-semibold hover:bg-blue-50 transition-all whitespace-nowrap">
+//             Call 07948549907 <br /> 
+//             <span className="text-sm">94% Response Rate</span>
+//           </button> 
+//           <button className="px-6 py-2 border-2 rounded text-base lg:text-lg text-white bg-blue-600 hover:bg-blue-700 transition-all whitespace-nowrap">
+//             <i className="ri-mail-line"></i>&nbsp;Send Enquiry
+//           </button>
+//         </div>
+
+//         {/* Mobile Menu Button */}
+//         <button 
+//           className="md:hidden ml-auto p-2"
+//           onClick={() => setIsMenuOpen(!isMenuOpen)}
+//         >
+//           <i className={`text-3xl ${isMenuOpen ? 'ri-close-line' : 'ri-menu-line'}`}></i>
+//         </button>
+//       </div>
+
+//       {/* Mobile Navigation Menu */}
+//       {isMenuOpen && (
+//         <div className="md:hidden mt-4 flex flex-col gap-3 border-t pt-4">
+//           <a className="text-base uppercase py-3 px-4 rounded-lg hover:bg-blue-600 hover:text-white active:scale-95 cursor-pointer transition-all text-center" href="#">
+//             Home
+//           </a>
+//           <a className="text-base uppercase py-3 px-4 rounded-lg hover:bg-blue-600 hover:text-white active:scale-95 cursor-pointer transition-all text-center" href="#">
+//             About Us
+//           </a>
+//           <a className="text-base uppercase py-3 px-4 rounded-lg hover:bg-blue-600 hover:text-white active:scale-95 cursor-pointer transition-all text-center" href="#">
+//             Contact Us
+//           </a>
+          
+//           {/* Mobile Contact Buttons */}
+//           <button className="px-6 py-3 border-2 rounded text-base border-blue-600 text-blue-600 font-semibold">
+//             Call 07948549907 <br /> 
+//             <span className="text-sm">94% Response Rate</span>
+//           </button> 
+//           <button className="px-6 py-3 border-2 rounded text-base text-white bg-blue-600 hover:shadow-black">
+//             <i className="ri-mail-line"></i>&nbsp;Send Enquiry
+//           </button>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default Navbar;
+

@@ -1,0 +1,100 @@
+.nav-bar {
+  background-color: #FFFFFF;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+
+  .img-section {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+
+    img {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 10px;
+      object-fit: cover;
+      object-position: center;
+    }
+    .text-content {
+      line-height: 1.2;
+
+      h1 {
+        font-weight: 900;
+      }
+      p {
+        font-size: 1.55rem;
+      }
+    }
+  }
+
+  .nav-routes {
+    display: flex;
+    gap: 2.75rem;
+    font-size: 2.25rem;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font: bold;
+    flex-wrap: wrap;
+    color: black !important;
+
+
+    .routes1:hover{
+     background: linear-gradient(to bottom, #564ecd, #2a2dd6);
+      padding-inline: 2rem;
+      padding-block: 1rem;
+      border-radius: 10px;
+      color: white;
+    
+    }
+
+  
+    .mange-btn{
+      display: flex;
+      flex-direction: column;
+      line-height: 0.5;
+
+     .btn1
+     
+     {
+      background: linear-gradient(to bottom, #564ecd, #2a2dd6);
+      padding-inline: 4rem;
+      padding-block: 1.25rem;
+      overflow: hidden;
+      border: none;
+      line-height: 1.5;
+      outline: none;
+      text-align: center;
+      font-size: 1.3rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font: bold;
+      color: white;
+
+    }
+    .btn{
+      color: blue !important;
+      border: 1px solid rgb(80, 80, 221);
+       padding-inline: 4rem;
+      padding-block: 0.75rem;
+      // overflow: hidden;
+      // border: none;
+      line-height: 1.1;
+      // outline: none;
+      text-align: center;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font: bold;
+      color: black;
+    }
+    button:active{
+      transform: scale(0.95);
+    }
+    }
+    
+  }
+}
