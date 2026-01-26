@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(222, 211, 211);
+    
+}
+html,
+body
+#root
+{
+    height: 100%;
+    width: 100%;
+}
+
+html,body{
+  background-color: black;
+}
+main{
+  height: 100%;
+  width: 100%;
+
+  button{
+    background-color: rgb(99, 99, 229);
+    color: white;
+    padding-inline: 1rem;
+    padding-block: 0.65rem;
+    border-radius: 0.25rem;
+  }
+
+}

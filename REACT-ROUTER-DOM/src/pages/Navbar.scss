@@ -1,0 +1,15 @@
+.navbar{
+  display: flex;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  background-color: blueviolet;
+  justify-content: space-between;
+  font-size: 2rem;
+  padding: 2rem;
+
+  .navitem{
+    display: flex;
+    gap: 5rem;
+  }
+
+}
