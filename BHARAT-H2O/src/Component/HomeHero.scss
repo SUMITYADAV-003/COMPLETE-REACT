@@ -1,0 +1,28 @@
+@font-face {
+    font-family: BH2;
+    src: url("../Font/f4.woff2");
+}
+.Home-hero {
+  height: 80vh;
+  position: relative;
+  background-color: aqua;
+  padding-inline: 7rem;
+
+  h1 {
+    color: black;
+    font-family: Montserrat, sans-serif;
+    position: absolute;
+    bottom: 30%;
+    line-height: 1.25;
+    color: black;  
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 900;
+    word-wrap: break-word;
+    font-family: BH2;
+    text-transform: uppercase;
+     letter-spacing: -0.02em;
+       display: flex;
+  flex-direction: column;
+
+}
+}

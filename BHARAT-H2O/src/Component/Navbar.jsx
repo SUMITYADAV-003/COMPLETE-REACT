@@ -6,9 +6,9 @@ const Navbar = () => {
   return (
     <div className="nav-bar">
       <div className="img-section">
-        <img src="/img1.png" alt="" />
+        <img src="/logo.png" alt="" />
         <div className="text-content">
-          <h1> Bharat H2O Solutions Private Limited  </h1>
+          <h1> Bharat H2O <br />Solutions Private <br /> Limited  </h1>
         <p>Mumbai, Maharashtra</p> 
         <p>GST No. 27AAMCB0100DIZE</p>
         </div>
@@ -18,10 +18,12 @@ const Navbar = () => {
         <Link to="/" className="routes1" style={{ textDecoration: 'none' }}>Home</Link>
         <Link to="/about" className="routes1" style={{ textDecoration: 'none' }}>About-us</Link>
         <Link to="/coutact" className="routes1" style={{ textDecoration: 'none' }}>Contact-us</Link>
-         <div className="mange-btn">
-          <button className="btn">Call <br /> 07948549907 <br />92% Response Rate </button><br />
-          <button className="btn1" >Send Enquire</button>
-        </div>
+        <Link to="/coutact" className="routes1" style={{ textDecoration: 'none' }}>  Results</Link>
+        <Link to="/coutact" className="routes1" style={{ textDecoration: 'none' }}> Services</Link>
+        <Link to="/coutact" className="routes1" style={{ textDecoration: 'none' }}>Pricing</Link>
+        <Link to="/coutact"  style={{ textDecoration: 'none' }}><button>Get in touch</button></Link>
+        
+        
       </div>
      
     </div>

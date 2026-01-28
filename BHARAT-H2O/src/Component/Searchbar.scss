@@ -55,7 +55,7 @@
   background-color: #ffff;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 0.75rem;
   gap: 1.5rem;
   flex-wrap: wrap; // Allow items to wrap on smaller screens
   
@@ -89,15 +89,20 @@
 
   p {
     font-size: clamp(1.25rem, 3vw, 1.50rem); // Responsive font size
-    font-weight: bold; // Fixed: was "font: bold"
+    font-weight: 500; // Fixed: was "font: bold"
     line-height: 1.2;
     margin: 0;
-    
+
+   
     @media (max-width: 768px) {
       text-align: center;
       width: 100%;
     }
   }
+   p:hover{
+      color: #4346e7;
+    }
+    
 
   .search-container {
     position: relative;

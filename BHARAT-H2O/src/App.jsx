@@ -6,15 +6,16 @@ import HomePage from './HeroPage/HomePage';
 import About from './HeroPage/About';
 import Contact from './HeroPage/Contact';
 import SearchBar from './Component/SearchBar';
+import HomeHero from './Component/HomeHero';
 
 
 const App = () => {
   return (
     <main>
       <Navbar />
-      <SearchBar />
+      <HomeHero />
      <Routes>
-      <Route path='/' element={<HomePage/>} />
+      <Route path='/home' element={<HomePage/>} />
       <Route path='/about' element={<About/>} />
       <Route path='/coutact' element={<Contact/>} />
      </Routes>

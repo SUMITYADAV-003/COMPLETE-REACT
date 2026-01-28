@@ -1,116 +1,28 @@
-// .nav-bar {
-//   background-color: #FFFFFF;
-//   padding-inline: 1rem;
-//   padding-block: 1rem;
-//   display: flex;
-//   justify-content: space-between;
-//   padding: 0.75rem;
 
-//   .img-section {
-//     display: flex;
-//     gap: 0.75rem;
-//     align-items: center;
+@font-face {
+    font-family: BH2;
+    src: url("../Font/f3.woff2");
+}
 
-//     img {
-//       height: 10rem;
-//       width: 10rem;
-//       border-radius: 10px;
-//       object-fit: cover;
-//       object-position: center;
-//     }
-//     .text-content {
-//       line-height: 1.2;
-
-//       h1 {
-//         font-weight: 700;
-//       }
-//       p {
-//         font-size: 1.55rem;
-//       }
-//     }
-//   }
-
-//   .nav-routes {
-//     display: flex;
-//     gap: 2.75rem;
-//     font-size: 2.25rem;
-//     text-decoration: none;
-//     justify-content: center;
-//     align-items: center;
-//     font: bold;
-//     flex-wrap: wrap;
-//     color: black !important;
-
-
-//     .routes1:hover{
-//      background: linear-gradient(to bottom, #564ecd, #2a2dd6);
-//       padding-inline: 2rem;
-//       padding-block: 1rem;
-//       border-radius: 10px;
-//       transition: all 0.5s;
-//       color: white;
-    
-//     }
-
-  
-//     .mange-btn{
-//       display: flex;
-//       flex-direction: column;
-//       line-height: 0.5;
-
-//      .btn1
-//      {
-//       background: linear-gradient(to bottom, #564ecd, #2a2dd6);
-//       padding-inline: 4rem;
-//       padding-block: 1.25rem;
-//       overflow: hidden;
-//       border: none;
-//       line-height: 1.5;
-//       outline: none;
-//       text-align: center;
-//       font-size: 1.3rem;
-//       border-radius: 10px;
-//       cursor: pointer;
-//       font: bold;
-//       color: white;
-
-//     }
-//     .btn{
-//       color: blue !important;
-//       border: 1px solid rgb(80, 80, 221);
-//        padding-inline: 4rem;
-//       padding-block: 0.75rem;
-//       // overflow: hidden;
-//       // border: none;
-//       line-height: 1.1;
-//       // outline: none;
-//       text-align: center;
-//       font-size: 1rem;
-//       border-radius: 10px;
-//       cursor: pointer;
-//       font: bold;
-//       color: black;
-//     }
-//     button:active{
-//       transform: scale(0.95);
-//       transition: all 0.1s;
-//     }
-//     }
-    
-//   }
-// }
+@font-face {
+    font-family: BH2-1;
+    src: url("../Font/f5.woff2");
+}
 
 .nav-bar {
-  background-color: #FFFFFF;
+  background-color:#FFFFFF;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   padding: 0.75rem 1rem;
   flex-wrap: wrap;
   gap: 1rem;
+  padding-block: 1.25rem;
+  padding-inline: 1rem;
+  
 
   @media (max-width: 1024px) {
-    justify-content: center;
+    justify-content: start;
     gap: 1.5rem;
   }
 
@@ -127,6 +39,7 @@
     @media (max-width: 768px) {
       flex-direction: column;
       text-align: center;
+    
       width: 100%;
     }
 
@@ -137,7 +50,7 @@
     img {
       height: 10rem;
       width: 10rem;
-      border-radius: 10px;
+      border-radius: 50%;
       object-fit: cover;
       object-position: center;
 
@@ -165,9 +78,10 @@
       }
 
       h1 {
-        font-weight: 700;
-        font-size: clamp(1.5rem, 4vw, 2.5rem);
+        font-weight: 100;
+        font-size: clamp(1rem, 3vw, 2rem);
         margin: 0 0 0.5rem 0;
+        font-family: BH2;
 
         @media (max-width: 768px) {
           font-size: clamp(1.25rem, 5vw, 2rem);
@@ -177,6 +91,7 @@
       p {
         font-size: clamp(1rem, 2.5vw, 1.55rem);
         margin: 0;
+        font-family: BH2-1;
 
         @media (max-width: 768px) {
           font-size: clamp(0.9rem, 3vw, 1.25rem);
@@ -187,18 +102,20 @@
 
   .nav-routes {
     display: flex;
-    gap: 2.75rem;
-    font-size: 2.25rem;
+    gap: 2rem;
+    font-size: 1.75rem;
     text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+    justify-content: start;
+    align-items: start;
+    padding-block: 1.75rem;
+    font-weight: 900;
     flex-wrap: wrap;
     color: black !important;
+    font-family: BH2;
 
     @media (max-width: 1200px) {
       gap: 1.5rem;
-      font-size: 1.75rem;
+      font-size: 1.65rem;
     }
 
     @media (max-width: 1024px) {
@@ -220,13 +137,13 @@
 
       &:hover {
         background: linear-gradient(to bottom, #564ecd, #2a2dd6);
-        padding-inline: 2rem;
+        padding-inline: 1.75rem;
         padding-block: 1rem;
         color: white;
 
         @media (max-width: 768px) {
-          padding-inline: 1.5rem;
-          padding-block: 0.75rem;
+          padding-inline: 1rem;
+          padding-block: 0.65rem;
           width: 100%;
         }
       }
@@ -237,87 +154,19 @@
       }
     }
 
-    .mange-btn {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-
-      @media (max-width: 768px) {
-        width: 100%;
-        gap: 0.75rem;
-      }
-
-      .btn1 {
-        background: linear-gradient(to bottom, #564ecd, #2a2dd6);
-        padding-inline: 4rem;
-        padding-block: 1.25rem;
-        overflow: hidden;
-        border: none;
-        line-height: 1.5;
-        outline: none;
-        text-align: center;
-        font-size: clamp(1rem, 2vw, 1.3rem);
-        border-radius: 10px;
-        cursor: pointer;
-        font-weight: bold;
-        color: white;
-        transition: transform 0.1s ease;
-
-        @media (max-width: 1024px) {
-          padding-inline: 3rem;
-          padding-block: 1rem;
-        }
-
-        @media (max-width: 768px) {
-          width: 100%;
-          padding-inline: 2rem;
-          padding-block: 1rem;
-        }
-
-        @media (max-width: 480px) {
-          padding-inline: 1.5rem;
-          padding-block: 0.875rem;
-        }
-
-        &:active {
-          transform: scale(0.95);
-        }
-      }
-
-      .btn {
-        color: blue !important;
-        background-color: white;
-        border: 1px solid rgb(80, 80, 221);
-        padding-inline: 4rem;
-        padding-block: 0.75rem;
-        line-height: 1.1;
-        text-align: center;
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        border-radius: 10px;
-        cursor: pointer;
-        font-weight: bold;
-        transition: transform 0.1s ease;
-
-        @media (max-width: 1024px) {
-          padding-inline: 3rem;
-          padding-block: 0.65rem;
-        }
-
-        @media (max-width: 768px) {
-          width: 100%;
-          padding-inline: 2rem;
-          padding-block: 0.75rem;
-        }
-
-        @media (max-width: 480px) {
-          padding-inline: 1.5rem;
-          padding-block: 0.625rem;
-        }
-
-        &:active {
-          transform: scale(0.95);
-        }
-      }
+    button {
+      padding-inline: 2.75rem;
+      padding-block: 1rem;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      background-color: #fdc028;
+      color: black;
+      // font-weight: 900;
+      outline: none;
+      border: none;
+      font-family: BH2;
+    
     }
   }
 }
