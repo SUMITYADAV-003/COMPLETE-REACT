@@ -5,7 +5,7 @@ import "./app.scss";
 import HomePage from './HeroPage/HomePage';
 import About from './HeroPage/About';
 import Contact from './HeroPage/Contact';
-import SearchBar from './Component/SearchBar';
+// import SearchBar from './Component/SearchBar';
 import HomeHero from './Component/HomeHero';
 
 

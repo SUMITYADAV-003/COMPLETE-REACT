@@ -1,28 +1,66 @@
 @font-face {
-    font-family: BH2;
-    src: url("../Font/f4.woff2");
+  font-family: BH2;
+  src: url("../Font/f4.woff2");
 }
-.Home-hero {
-  height: 80vh;
+@font-face {
+  font-family: BH3;
+  src: url("../Font/f5.woff2");
+}
+// .hero-container{
+//   display: grid;
+//   grid-template-columns: 2fr 1fr;
+//   grid-template-areas: "hero-content hero-content hero-image";
+
+
+
+
+//   .hero-content{
+//     background-color: aquamarine;
+//     grid-area: hero-content ;
+//   }
+//   .hero-image{
+//     background-color: rgb(223, 141, 141);
+//     grid-area: hero-image;
+//   }
+// }
+
+.hero-container {
+  width: 100%;
+  height: 50vw;
+  gap: 1.25rem;
   position: relative;
-  background-color: aqua;
-  padding-inline: 7rem;
+  padding-inline: 4rem;
+  display: grid; // Don't forget this!
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "hero-content hero-image"; // Fixed: should be in ONE row with TWO areas
+  
+  .hero-content {
+    background-color: aquamarine;
+    padding-inline: 3rem ;
+    grid-area: hero-content;
 
-  h1 {
-    color: black;
-    font-family: Montserrat, sans-serif;
-    position: absolute;
-    bottom: 30%;
-    line-height: 1.25;
-    color: black;  
-    font-size: clamp(2.5rem, 6vw, 5rem);
-    font-weight: 900;
-    word-wrap: break-word;
-    font-family: BH2;
-    text-transform: uppercase;
-     letter-spacing: -0.02em;
-       display: flex;
-  flex-direction: column;
+    h1{
+      font-size: 4rem;
+      font-family: BH2;
+      position: relative;
+      bottom: -60%;
+      line-height: 1;
+    }
+    .hero-meta{
+      display: flex;
+      gap: 1rem;
+      font-size: large;
+      font-family: BH3;
+      position: relative;
+      bottom: -60%;
+    }
 
-}
+  }
+  
+  .hero-image {
+    background-color: rgb(223, 141, 141);
+    // height: 250px;
+    // width: 250px;
+    grid-area: hero-image;
+  }
 }
