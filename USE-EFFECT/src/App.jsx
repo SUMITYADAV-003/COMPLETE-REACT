@@ -14,11 +14,9 @@ const App = () => {
   }
   useEffect(function() {
     getDate();
-  }, [num])
+  }, [num]);
 
-
-
-
+  
   return (
     <main>
     <div>
