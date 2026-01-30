@@ -6,61 +6,222 @@
   font-family: BH3;
   src: url("../Font/f5.woff2");
 }
-// .hero-container{
-//   display: grid;
-//   grid-template-columns: 2fr 1fr;
-//   grid-template-areas: "hero-content hero-content hero-image";
 
 
 
+/* Base section styling */
+section {
+  position: relative;
+  top: 120px;
+}
 
-//   .hero-content{
-//     background-color: aquamarine;
-//     grid-area: hero-content ;
-//   }
-//   .hero-image{
-//     background-color: rgb(223, 141, 141);
-//     grid-area: hero-image;
-//   }
-// }
-
+/* Hero Container - Mobile First Approach */
 .hero-container {
   width: 100%;
-  height: 50vw;
-  gap: 1.25rem;
-  position: relative;
-  padding-inline: 4rem;
-  display: grid; // Don't forget this!
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas: "hero-content hero-image"; // Fixed: should be in ONE row with TWO areas
+  /* Mobile: Stack vertically, auto height */
+  height: auto;
+  min-height: 100vh;
+  gap: 1rem;
+  padding-inline: 1rem;
+  display: grid;
+  /* Mobile: Single column layout */
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "hero-content"
+    "hero-image";
   
+  /* HERO CONTENT SECTION */
   .hero-content {
-    background-color: aquamarine;
-    padding-inline: 3rem ;
+    padding-inline: 1rem;
     grid-area: hero-content;
-
-    h1{
-      font-size: 4rem;
+    position: relative;
+    /* Mobile: Add minimum height for proper spacing */
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    h1 {
+      /* Mobile: Smaller font size */
+      font-size: 1.25rem;
       font-family: BH2;
+      /* Mobile: Remove absolute positioning for better flow */
       position: relative;
-      bottom: -60%;
-      line-height: 1;
-    }
-    .hero-meta{
+      bottom: auto;
       display: flex;
-      gap: 1rem;
-      font-size: large;
-      font-family: BH3;
-      position: relative;
-      bottom: -60%;
+      line-height: 1.2;
+      white-space: normal; /* Changed from wrap to normal */
+      flex-shrink: 0;
+      text-transform: uppercase;
+      /* Mobile: Add margin for spacing */
+      margin-bottom: 1.5rem;
     }
-
+    
+    .hero-meta {
+      display: flex;
+      /* Mobile: Stack meta items vertically if needed */
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 1rem;
+      font-family: BH3;
+      /* Mobile: Remove absolute positioning */
+      position: relative;
+      bottom: auto;
+    }
   }
   
+  /* HERO IMAGE SECTION */
   .hero-image {
-    background-color: rgb(223, 141, 141);
-    // height: 250px;
-    // width: 250px;
+    background-image: url("/bg1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     grid-area: hero-image;
+    position: relative;
+    /* Mobile: Set minimum height */
+    min-height: 50vh;
+    /* Mobile: Add border radius for visual appeal (optional) */
+    border-radius: 0.5rem;
+  }
+}
+
+/* ============================================
+   TABLET BREAKPOINT (768px and up)
+   ============================================ */
+@media screen and (min-width: 768px) {
+  .hero-container {
+    gap: 1.5rem;
+    padding-inline: 2rem;
+    /* Tablet: Still stacked but with more space */
+    min-height: 80vh;
+    
+    .hero-content {
+      padding-inline: 2rem;
+      min-height: 50vh;
+      
+      h1 {
+        /* Tablet: Medium font size */
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+      }
+      
+      .hero-meta {
+        font-size: 1.1rem;
+        gap: 1.25rem;
+      }
+    }
+    
+    .hero-image {
+      min-height: 60vh;
+    }
+  }
+}
+
+/* ============================================
+   SMALL DESKTOP BREAKPOINT (1024px and up)
+   ============================================ */
+@media screen and (min-width: 1024px) {
+  .hero-container {
+    gap: 2rem;
+    padding-inline: 3rem;
+    height: 60vw;
+    max-height: 800px; /* Prevent it from getting too tall */
+    /* Desktop: Side-by-side layout */
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "hero-content hero-image";
+    
+    .hero-content {
+      padding-inline: 2.5rem;
+      /* Desktop: Restore absolute positioning */
+      min-height: auto;
+      
+      h1 {
+        /* Desktop: Larger font */
+        font-size: 4.5rem;
+        position: absolute;
+        bottom: 30%;
+        margin-bottom: 0;
+      }
+      
+      .hero-meta {
+        font-size: 1.15rem;
+        position: absolute;
+        bottom: 26%;
+        flex-wrap: nowrap;
+      }
+    }
+    
+    .hero-image {
+      min-height: auto;
+      border-radius: 0; /* Remove border radius on desktop if desired */
+    }
+  }
+}
+
+/* ============================================
+   LARGE DESKTOP BREAKPOINT (1440px and up)
+   ============================================ */
+@media screen and (min-width: 1440px) {
+  .hero-container {
+    gap: 2rem;
+    padding-inline: 4rem;
+    height: 50vw;
+    max-height: 900px;
+    /* Your original layout */
+    grid-template-columns: 2fr 0.83fr;
+    
+    .hero-content {
+      padding-inline: 3rem;
+      
+      h1 {
+        /* Original large font size */
+        font-size: 3rem;
+      }
+      
+      .hero-meta {
+        font-size: large;
+      }
+    }
+  }
+}
+
+/* ============================================
+   EXTRA LARGE SCREENS (1920px and up)
+   ============================================ */
+@media screen and (min-width: 1920px) {
+  .hero-container {
+    /* Prevent content from stretching too much on huge screens */
+    max-width: 1920px;
+    margin-inline: auto;
+    
+    .hero-content {
+      h1 {
+        /* Cap the font size on very large screens */
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+/* ============================================
+   LANDSCAPE MOBILE (height-based query)
+   ============================================ */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .hero-container {
+    /* Landscape mobile: Reduce heights */
+    min-height: auto;
+    
+    .hero-content {
+      min-height: 50vh;
+      
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+    
+    .hero-image {
+      min-height: 40vh;
+    }
   }
 }

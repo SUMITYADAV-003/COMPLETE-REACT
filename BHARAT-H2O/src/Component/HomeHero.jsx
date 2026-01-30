@@ -6,7 +6,7 @@ const HomeHero = () => {
       <div className="hero-container">
     <div className="hero-content">
       <h1 className="hero-heading">
-        THE 13 BEST MANUFACTURING WEBSITE DESIGNS IN 2025
+        Top 13 Water Treatment Plant Manufacturers in India 2026
       </h1>
       
       <div className="hero-meta">
@@ -16,8 +16,7 @@ const HomeHero = () => {
     </div>
     
     <div className="hero-image">
-      <img src="" alt="" />
-      
+     
     </div>
   </div>
     </section>

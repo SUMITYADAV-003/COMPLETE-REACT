@@ -18,7 +18,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   padding-block: 1.25rem;
-  padding-inline: 1rem;
+  padding-inline: 2rem;
   
 
   @media (max-width: 1024px) {
@@ -136,10 +136,10 @@
       border-radius: 10px;
 
       &:hover {
-        background: linear-gradient(to bottom, #564ecd, #2a2dd6);
-        padding-inline: 1.75rem;
-        padding-block: 1rem;
-        color: white;
+        background: linear-gradient(to bottom, #dfdee2, #ffffff85);
+        padding-inline: 1.5rem;
+        padding-block: 1.25rem;
+        color: #FDC028;
 
         @media (max-width: 768px) {
           padding-inline: 1rem;
