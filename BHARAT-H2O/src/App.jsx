@@ -5,20 +5,18 @@ import "./app.scss";
 import HomePage from './HeroPage/HomePage';
 import About from './HeroPage/About';
 import Contact from './HeroPage/Contact';
-// import SearchBar from './Component/SearchBar';
+import ProductCard from './Component/ProductCard';
 import HomeHero from './Component/HomeHero';
 
 
 const App = () => {
   return (
     <main>
-      <Navbar />
-      <HomeHero />
-     <Routes>
-      <Route path='/home' element={<HomePage/>} />
+    <Routes>
+      <Route path='/' element={<HomePage/>} />
       <Route path='/about' element={<About/>} />
       <Route path='/coutact' element={<Contact/>} />
-     </Routes>
+    </Routes>
     </main>
   )
 }

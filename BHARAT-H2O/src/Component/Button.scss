@@ -1,0 +1,25 @@
+
+@font-face {
+  font-family: BH2;
+  src: url("../Font/f4.woff2");
+}
+
+.Explre-button{
+
+  button{
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    border: none;
+    font-size: 1.65rem;
+    background: linear-gradient(to bottom,#f5d480, #FDC028 );
+    font-family: BH2;
+    
+
+    i{
+      margin-left: 0.85rem;
+      font-family: BH2
+      ;
+    }
+  }
+ 
+}

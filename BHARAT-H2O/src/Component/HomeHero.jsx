@@ -1,8 +1,13 @@
 import React from 'react'
 import "./HomeHero.scss";
+import Button from './Button';
 const HomeHero = () => {
   return (
     <section>
+      <div className='Explore'>
+         <Button />
+      </div>
+     
       <div className="hero-container">
     <div className="hero-content">
       <h1 className="hero-heading">
